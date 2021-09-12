@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.wrapper {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.music svg {
+  max-width: 100%;
+}
+.card {
+  min-height: 90vh;
+  width: 28.1rem;
+  background: #fff;
+  border-radius: 20px;
+  padding-right: 0 5rem;
+  overflow: hidden;
+}
+.container {
+  padding: 0 45px;
+}
+h2,
+p {
+  margin: 20px 0;
+}
+h2 {
+  margin-top: 40px;
+}
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+.btn {
+  border: none;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn1 {
+  padding: 17px 115px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0px 5px hsl(245, 75%, 52%);
+  background: hsl(245, 75%, 52%);
+}
+.btn1:hover {
+  color: #fff;
+  background: hsl(224, 23%, 55%);
+}
+.btn2 h4 {
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: hsl(224, 23%, 55%);
+}
+.btn2 h4:hover {
+  color: hsl(223, 47%, 23%);
+}
+h2 {
+  color: hsl(223, 47%, 23%);
+}
+.plan a {
+  font-weight: bold;
+  color: hsl(245, 75%, 52%);
+  margin-left: 60px;
+}
+.plan a:hover {
+  color: hsl(224, 23%, 55%);
+}
+
+span {
+  color: hsl(224, 23%, 55%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 15px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 1024px) {
+  .card {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 414px) {
+  .card {
+    width: 25rem;
+  }
+  .container {
+    padding: 0 25px;
+  }
+  .btn1 {
+    padding: 17px 100px;
+  }
+  p {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+  .card {
+    width: 22rem;
+  }
+  .container {
+    padding: 0 25px;
+  }
+  .btn1 {
+    padding: 17px 90px;
+  }
+  .plan {
+    padding: 25px 10px;
+  }
+}
